@@ -13,11 +13,11 @@ body{background-color: #333;}
     border-radius: 10px;
   }
   
-  li {
+ .nav {
     float: left;
   }
   
-  li a {
+.nav a {
     display: block;
     color: #736B76;
     text-align: center;
@@ -26,11 +26,14 @@ body{background-color: #333;}
     text-decoration: none;
   }
 
-  .active {
+  #active {
     background-color: hsl(7, 100%, 55%);
-    color:black;
+    color:#fefefe;
     font-weight: 200;
   }  
+.nav a:hover{background-color:hsl(7, 100%, 55%);color:#fefefe;}
+
+
 
 #menu {
     position: fixed;
@@ -38,13 +41,13 @@ body{background-color: #333;}
     width: 100%;
   }
 
-  li {
+  .nav {
     border-right: 1px solid #bbb;
   }
 
   #logo {float:center; }
   
-  li:last-child {
+.nav:last-child {
     border-right: none;
     padding-right: 10px;
 
@@ -73,6 +76,7 @@ body{background-color: #333;}
   .spanb {
     display: inline-block;
     width: 588.5px;
+    height: 200px;
     margin-left: 15;
     border: 1px solid #736B76;   
     background-color: hsl(7, 100%, 55%);
