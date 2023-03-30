@@ -58,6 +58,7 @@ ul {
 
   #bdiv {
     width: 1120px;
+    padding-top: 10px;
     padding: 40px;
     border: 2px solid gray;
     background-color: #F8F4E9;
@@ -65,5 +66,10 @@ ul {
     margin-right: 10px;
     margin-left: 15px;
   }
-  .t1 {font-family: "Gill Sans MT";}
+  .t {font-family: "Gill Sans MT"; 
+    color:#333;
+}
+.t1 {font-family: "Gill Sans MT"; 
+    color:#736B76;
+}
   .p1 {font-family: "Sitka Text";}
