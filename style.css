@@ -1,7 +1,7 @@
 /* body{background-color: #736B76;} */
 body{background-color: #333;}
 
-ul {
+#menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,6 +10,7 @@ ul {
     background-color:#F8F4E9;
     border-bottom: 1px solid #bbb;
     border-left: 1px solid #bbb;
+    border-radius: 10px;
   }
   
   li {
@@ -31,7 +32,7 @@ ul {
     font-weight: 200;
   }  
 
-  ul {
+#menu {
     position: fixed;
     top: 0;
     width: 100%;
@@ -49,22 +50,35 @@ ul {
 
   }
 
-  .rcorners1 {
+  /* .rcorners1 {
     border-radius: 20px;
-  }
-  .rcorners {
-    border-radius: 10px;
-  }
+  } */
 
-  #bdiv {
+.bdiv {
     width: 1120px;
     padding-top: 10px;
     padding: 40px;
+    padding-bottom: 100px;
     border: 2px solid gray;
     background-color: #F8F4E9;
-    margin-top: 50px;
+    margin-top: 15px;
     margin-right: 10px;
     margin-left: 15px;
+    margin-bottom: 10px;
+    border-radius: 20px
+  }
+
+  #div1 {margin-top: 60px;}
+
+  .spanb {
+    display: inline-block;
+    width: 588.5px;
+    margin-left: 15;
+    border: 1px solid #736B76;   
+    background-color: hsl(7, 100%, 55%);
+    border-radius: 10px; 
+    text-align: center;
+    
   }
   .t {font-family: "Gill Sans MT"; 
     color:#333;
@@ -72,4 +86,26 @@ ul {
 .t1 {font-family: "Gill Sans MT"; 
     color:#736B76;
 }
-  .p1 {font-family: "Sitka Text";}
+  .p1 {font-family: "Sitka Text";
+        text-align: justify;
+}
+
+.white{color:#fefefe;
+    font-family: "Gill Sans MT";
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+#sl {margin-right: 20px;}
+.div2{text-align: center;
+    width:1220px;
+padding-right: 10px;
+padding-left: 10px;
+margin-top: 20px;
+}
+
+.divtext {width:550px;
+    height:200px; 
+    background-color: blanchedalmond;
+    margin-left: 19px;}
+
