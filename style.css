@@ -79,12 +79,13 @@ body{background-color: #333;}
     height: 220px;
     margin-left: 15;
     border: 1px solid #736B76;   
-    background-color: hsl(7, 100%, 55%);
+    /* background-color: hsl(7, 100%, 55%); */
+    background-image: linear-gradient(to right, #ff341a , #ff1b1bdb);
     border-radius: 10px; 
-    text-align: center;
-    
-  }
-  .t {font-family: "Gill Sans MT"; 
+    text-align: center;}
+
+  .t {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:#333;
 }
 .t1 {font-family: "Gill Sans MT"; 
