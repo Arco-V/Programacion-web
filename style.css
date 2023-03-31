@@ -76,7 +76,7 @@ body{background-color: #333;}
   .spanb {
     display: inline-block;
     width: 588.5px;
-    height: 200px;
+    height: 220px;
     margin-left: 15;
     border: 1px solid #736B76;   
     background-color: hsl(7, 100%, 55%);
@@ -100,11 +100,11 @@ body{background-color: #333;}
     font-weight: lighter;
 }
 
-#sl {margin-right: 20px;}
+#sl {margin-right: 15px;}
 .div2{text-align: center;
     width:1220px;
 padding-right: 10px;
-padding-left: 10px;
+padding-left: 15px;
 margin-top: 20px;
 }
 
@@ -113,3 +113,9 @@ margin-top: 20px;
     background-color: blanchedalmond;
     margin-left: 19px;}
 
+.cuadrodet {text-align:justify; 
+padding-left: 25px;
+padding-right:25px;
+padding-top:15px;
+font-family: "Stitka Text";
+color:#fefefe}
