@@ -31,6 +31,8 @@ body{background-color: #333;}
     color:#fefefe;
     font-weight: 200;
   }  
+
+/* Esto es algo que no vimos */
 .nav a:hover{background-color:hsl(7, 100%, 55%);color:#fefefe;}
 
 
@@ -59,9 +61,9 @@ body{background-color: #333;}
 
 .bdiv {
     width: 1120px;
-    padding-top: 10px;
     padding: 40px;
     padding-bottom: 100px;
+    padding-top: 20px;
     border: 2px solid gray;
     background-color: #F8F4E9;
     margin-top: 15px;
@@ -79,8 +81,8 @@ body{background-color: #333;}
     height: 220px;
     margin-left: 15;
     border: 1px solid #736B76;   
-    /* background-color: hsl(7, 100%, 55%); */
-    background-image: linear-gradient(to right, #ff341a , #ff1b1bdb);
+    background-color: #ff341a;
+     /* background-image: linear-gradient(to right, #ff341a , #ff1b1bdb); */
     border-radius: 10px; 
     text-align: center;}
 
