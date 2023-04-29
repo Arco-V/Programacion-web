@@ -191,4 +191,5 @@ text-align: justify;
 margin-left: 5px;
 }
 #logo{display: none;}
+.nav a{font-size: small;}
 }
