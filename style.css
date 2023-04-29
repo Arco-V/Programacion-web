@@ -51,7 +51,7 @@ body{background-color: #333;}
   #logo {float:center; }
   
 .nav:last-child {
-    border-right: none;
+    /* border-right: none; */
     padding-right: 10px;
 
   }
@@ -188,8 +188,12 @@ text-align: justify;
     background-color: rgb(255, 255, 255);
   }
 .bdiv{padding: 15px;
-margin-left: 5px;
+margin-left: 0;
+width: 85vw;
 }
 #logo{display: none;}
-.nav a{font-size: small; padding-inline: 10px;}
+#menu{width: 93vw;}
+.nav a{font-size: small; 
+  padding-inline: 10px;
+  }
 }
