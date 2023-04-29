@@ -18,7 +18,8 @@ body{background-color: #333;}
   }
   
 .nav a {
-    display: block;
+    display: flex;
+    justify-content: space-around;
     color: #736B76;
     text-align: center;
     font-family: "Gill Sans MT";
@@ -110,11 +111,27 @@ flex-wrap: wrap;}
 
 #sl {margin-right: 15px;}
 .div2{text-align: center;
-    width:1220px;
+    width:88px;
 padding-right: 10px;
 padding-left: 15px;
 margin-top: 20px;
 }
+
+.cuadro{
+ 
+  width: 580px;
+  height: 210px;
+  border-radius: 10px;
+  border-width: 3px;
+border: 2px solid #bbb;
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+margin-top:20px;
+margin-right: 5px;
+align-items: baseline;
+border: 1px solid #736B76;   
+  background-color: #ff341a;}
 
 .cuadrodet {text-align:justify; 
 padding-left: 25px;
@@ -166,3 +183,12 @@ text-align: justify;
     align-items: stretch;
     
  }
+ @media screen and (max-width: 600px) {
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+.bdiv{padding: 15px;
+margin-left: 5px;
+}
+#logo{display: none;}
+}
