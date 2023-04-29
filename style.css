@@ -1,12 +1,11 @@
-/* body{background-color: #736B76;} */
 body{background-color: #333;}
 
+/* CONFIGURACIÓN DEL MENÚ */
 #menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* background-color: #736B76; */
     background-color:#F8F4E9;
     border-bottom: 1px solid #bbb;
     border-left: 1px solid #bbb;
@@ -27,15 +26,15 @@ body{background-color: #333;}
     text-decoration: none;
   }
 
+  /* La página activa se muestra en rojo en el menú */
   #active {
     background-color: hsl(7, 100%, 55%);
     color:#fefefe;
     font-weight: 200;
   }  
 
-/* Esto es algo que no vimos */
-.nav a:hover{background-color:hsl(7, 100%, 55%);color:#fefefe;}
 
+.nav a:hover{background-color:hsl(7, 100%, 55%);color:#fefefe;}
 
 
 #menu {
@@ -53,13 +52,11 @@ body{background-color: #333;}
 .nav:last-child {
     /* border-right: none; */
     padding-right: 10px;
-
   }
 
-  /* .rcorners1 {
-    border-radius: 20px;
-  } */
+/* CONFIGURACIÓN DEL BODY */
 
+/* bdiv es para las secciones div más amplias  */
 .bdiv {
     width: 88vw;
     padding: 40px;
@@ -74,22 +71,12 @@ body{background-color: #333;}
     border-radius: 20px
   }
 
-  #div1 {margin-top: 60px;
+#div1 {margin-top: 60px;
   display: flex;
-flex-wrap: wrap;}
+  flex-wrap: wrap;}
 
-  .spanb {
-    display: inline-block;
-    width: 588.5px;
-    height: 220px;
-    margin-left: 15;
-    border: 1px solid #736B76;   
-    background-color: #ff341a;
-     /* background-image: linear-gradient(to right, #ff341a , #ff1b1bdb); */
-    border-radius: 10px; 
-    text-align: center;}
 
-  .t {
+.t {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:#333;
 }
@@ -100,8 +87,45 @@ flex-wrap: wrap;}
         text-align: justify;
 }
 
-.white{color:#fefefe;
-    /* font-family: "Gill Sans MT"; */
+/* Cuadros que hablan sobre la misión y medios para lograrlo */
+
+.flex {display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  flex-wrap: wrap;
+}
+
+.cuadro{
+  width: 580px;
+  height: 210px;
+  border-radius: 10px;
+  border-width: 3px;
+  border: 2px solid #bbb;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top:20px;
+  margin-right: 5px;
+  align-items: baseline;
+  border: 1px solid #736B76;   
+  background-color: #ff341a;}
+
+.cuadrodet {text-align:justify; 
+padding-left: 25px;
+padding-right:30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color:#fefefe;
+}
+
+.lista1 {color:#fefefe;
+padding-left: 50px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-align: justify;
+}
+
+.it1{padding-bottom:10px}
+
+.white_t{color:#fefefe;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
     font-weight:600;
@@ -109,91 +133,48 @@ flex-wrap: wrap;}
     padding-left: 25px;
 }
 
-#sl {margin-right: 15px;}
-.div2{text-align: center;
-    width:88px;
-padding-right: 10px;
-padding-left: 15px;
-margin-top: 20px;
-}
-
-.cuadro{
- 
-  width: 580px;
-  height: 210px;
-  border-radius: 10px;
-  border-width: 3px;
-border: 2px solid #bbb;
-display: flex;
-justify-content: space-around;
-flex-direction: column;
-margin-top:20px;
-margin-right: 5px;
-align-items: baseline;
-border: 1px solid #736B76;   
-  background-color: #ff341a;}
-
-.cuadrodet {text-align:justify; 
-padding-left: 25px;
-padding-right:30px;
-padding-top:20px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-/* font-family: "Stitka Text"; */
-color:#fefefe;
-}
-
-.lista1 {color:#fefefe;
-padding-left: 50px;
-padding-top:10px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-/* font-family: "Stitka Text"; */
-text-align: justify;
-}
-
-.it1{padding-bottom:10px}
-
+/* FOOTER */
 .foot{   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 32px;
     font-weight:600;
     text-align: right;}
 
-    .div3{
-        width:1220px;
-    padding-right: 20px;
-    padding-left: 15px;
-    margin-top: 20px;
-    margin-right: 15px;
-    }
 
-    .flex {display: flex;
-      justify-content: space-evenly;
-      padding-top: 15px;
-      flex-wrap: wrap;
-    }
-  
-      .producto{
-        width: 250px;
-        height: 350px;
-        border-radius: 10px;
-        border-width: 3px;
-      border: 2px solid #bbb;
-      display: flex;
-      justify-content: space-evenly;
-    margin:25px;
-    align-items: stretch;
+/* PÁGINA DE EBOOKS */
+.producto{
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  border-width: 3px;
+  border: 2px solid #bbb;
+  display: flex;
+  justify-content: space-evenly;
+  margin:25px;
+  align-items: stretch;
     
  }
+
+
+ /* ADAPTACIÓN A CELULARES */
+
  @media screen and (max-width: 600px) {
-  body {
-    background-color: rgb(255, 255, 255);
+body {
+  background-color: rgb(255, 255, 255);
   }
 .bdiv{padding: 15px;
 margin-left: 0;
 width: 85vw;
 }
 #logo{display: none;}
+
 #menu{width: 93vw;}
+
 .nav a{font-size: small; 
   padding-inline: 10px;
   }
+
+.foot{font-size:medium;}
+.p1{font-size: small;}
+.it1{font-size: small;}
+.cuadrodet{font-size: small;}
 }
