@@ -139,6 +139,7 @@ text-align: justify;
     font-weight:600;
     text-align: right;}
 
+.foot2{text-align: left;}
 
 /* PÁGINA DE EBOOKS */
 .producto{
@@ -174,6 +175,7 @@ width: 85vw;
   }
 
 .foot{font-size:medium;}
+.foot2{font-size: smaller;}
 .p1{font-size: small;}
 .it1{font-size: small;}
 .cuadrodet{font-size: small;}
