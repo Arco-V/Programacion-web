@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crianza con armonía</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" !important>
 
-    
+
+
 </head>
 <body>
 
@@ -34,15 +36,56 @@
 
             <h1 class="t">Hablanos para resolver tus dudas</h1>
 
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Ingresa tu mail: </label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
 
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Escribe tu pregunta aquí: </label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-              </div>
+<!-- Wrapper container -->
+<div class="container py-4">
+ 
+    <!-- Bootstrap 5 starter form -->
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+  
+      <!-- Name input -->
+      <div class="mb-3">
+        <label class="form-label" for="name">Nombre</label>
+        <input class="form-control" id="name" type="text" placeholder="Nombre" data-sb-validations="required" st/>
+        <div class="invalid-feedback" data-sb-feedback="name:required">Debe poner un nombre.</div>
+      </div>
+  
+      <!-- Email address input -->
+      <div class="mb-3">
+        <label class="form-label" for="emailAddress">Dirección de Email</label>
+        <input class="form-control" id="emailAddress" type="email" placeholder="Email" data-sb-validations="required, email" />
+        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Debe ingresar un mail.</div>
+        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Este email no es válido.</div>
+      </div>
+  
+      <!-- Message input -->
+      <div class="mb-3">
+        <label class="form-label" for="message">Pregunta que quiere hacernos</label>
+        <textarea class="form-control" id="message" type="text" placeholder="Pregunta" style="height: 10rem;" data-sb-validations="required"></textarea>
+        <div class="invalid-feedback" data-sb-feedback="message:required">Debe ingresar una pregunta.</div>
+      </div>
+  
+      <!-- Form submissions success message -->
+      <div class="d-none" id="submitSuccessMessage">
+        <div class="text-center mb-3">Su pregunta ha sido enviada con éxito!</div>
+      </div>
+  
+      <!-- Form submissions error message -->
+      <div class="d-none" id="submitErrorMessage">
+        <div class="text-center text-danger mb-3">Error al mandar el mensaje!</div>
+      </div>
+  
+      <!-- Form submit button -->
+      <div class="d-grid">
+        <button class="btn btn-secondary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
+      </div>
+  
+    </form>
+  
+  </div>
+  
+  <!-- SB Forms JS -->
+  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
         </div>
 </div>
