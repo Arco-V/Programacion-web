@@ -49,7 +49,12 @@ body{background-color: #333;}
     border-right: 1px solid #bbb;
   }
 
-  #logo {float:center; }
+  #logo {float:center;
+    width:50%; 
+    text-align: center;
+    padding-top: 2.67px; 
+    padding-bottom: 0;
+  }
   
 .nav:last-child {
     /* border-right: none; */
@@ -72,19 +77,7 @@ body{background-color: #333;}
     margin-bottom: 10px;
     border-radius: 20px
   }
-  .bdiv2 {
-    width: 94vw;
-    padding: 40px;
-    padding-bottom: 100px;
-    padding-top: 20px;
-    border: 2px solid gray;
-    background-color: #f8f4e9;
-    margin-top: 15px;
-    margin-right: 0px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    border-radius: 20px
-  }
+
 #div1 {margin-top: 60px;
   display: flex;
   flex-wrap: wrap;}
@@ -228,8 +221,10 @@ footer{margin: 2px;}
   border: solid#736B76 1px;
 }
 
-.form-control{width: 90%;}
+.form-control{width: 85%;}
 
-.d-grid{justify-content: center;}
+.d-grid{justify-content: center;margin-right: 4vw;}
+.t{font-size: x-large;}
+.t1{font-size: large;}
 }
 
