@@ -49,8 +49,9 @@ body{background-color: #333;}
     border-right: 1px solid #bbb;
   }
 
-  #logo {float:center;
-    width:50%; 
+  #logo {padding-left: 20vw;
+    float:left;
+    /* width:50%;  */
     text-align: center;
     padding-top: 2.67px; 
     padding-bottom: 0;
@@ -59,6 +60,7 @@ body{background-color: #333;}
 .nav:last-child {
     /* border-right: none; */
     padding-right: 10px;
+    border-left: 1px solid #bbb;
   }
 
 /* CONFIGURACIÓN DEL BODY */
@@ -184,18 +186,42 @@ text-align: justify;
 
 /* PÁGINA DE PREGUNTAS */
 
+.pregunta{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #dedede;
+color: #635f65;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+font-size: large;
+font-weight: 500;
+font-style: italic;
+padding: 8px;
+margin-top: 20px;
+}
+
+.respuesta{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #edebeb;
+  font-size: medium;
+  font-weight: 300;
+  padding: 8px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* display: none; */
+}
+
 .form-label{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 padding-right:2vw}
 
 .btn btn-primary btn-lg{--bs-btn-bg: var(--bd-orange-bg);}
  /* ADAPTACIÓN A CELULARES */
 
- @media screen and (max-width: 680px) {
+ @media screen and (max-width: 900px) {
 body {
   background-color: rgb(255, 255, 255);}
 
-.bdiv{padding: 15px;
+.bdiv{padding: 4vw;
   margin-left: 0;
+
   width: 85vw;}
 
 #logo{display: none;}
@@ -226,5 +252,8 @@ footer{margin: 2px;}
 .d-grid{justify-content: center;margin-right: 4vw;}
 .t{font-size: x-large;}
 .t1{font-size: large;}
+
+.pregunta{font-size: medium;}
+.respuesta{font-size: 14px;}
 }
 

@@ -1,14 +1,37 @@
-alert("Bienvenido/a a Crianza con Armonía")
 
+const preg = document.getElementsByClassName("pregunta")
+const resp = document.getElementsByClassName("respuesta")
 
-let madre = prompt("¿Es usted madre/padre? (confirme con un 'Sí')",)
-let info = prompt("¿Desea ver una síntesis de nuestro trabajo? (confirme con un 'Sí')")
-function esMadre (madre, info){
-    if (madre == "Sí" & info == "Sí"){return "Bienvenido/a a esta página de crianza, esperamos serle muy útil para mejorar su estilo de crianza en su recorrido de ser padre/madre. Nos basamos en divulgar contenido profesional sobre la crianza respetuosa, en Instragram puede ver más de 150 posts sobre el tema"}
-    else if (madre == "Sí" & info != "Sí"){return "Bienvenido/a padre/madre, cualquier duda puede realizarla en la página de contacto"}
-    else if (madre != "Sí" & info == "Sí"){return "¡Por supuesto! Nos basamos en divulgar contenido profesional sobre la crianza respetuosa, en Instragram puede ver más de 150 posts sobre el tema, cualquier consulta no dude en realizarla en la página de contacto"}
-    else {return "Bienvenido/a, cualquier duda puede realizarla en la página de contacto"}
+function displayResponse(posicionResp) {
+    if (resp[posicionResp].style.display == "none") 
+    {resp[posicionResp].style.display = ""}
+    else
+    {resp[posicionResp].style.display = "none"}
 }
 
-alert(esMadre(madre,info))
+resp[0].style.display="none"
+resp[1].style.display="none"
+resp[2].style.display="none"
+resp[3].style.display="none"
 
+preg[0].addEventListener("click", function() {displayResponse(0);});
+preg[1].addEventListener("click", function() {displayResponse(1);});
+preg[2].addEventListener("click", function() {displayResponse(2);});
+preg[3].addEventListener("click", function() {displayResponse(3);});
+
+
+function changeColor(posicionPreg) {
+    preg[posicionPreg].style.color="#333"};
+
+function changeColor2(posicionPreg) {
+    preg[posicionPreg].style.color="#635f65"};
+
+preg[0].addEventListener("mouseover", function() {changeColor(0);});
+preg[1].addEventListener("mouseover", function() {changeColor(1);});
+preg[2].addEventListener("mouseover", function() {changeColor(2);});
+preg[3].addEventListener("mouseover", function() {changeColor(3);});
+
+preg[0].addEventListener("mouseout", function() {changeColor2(0);})
+preg[1].addEventListener("mouseout", function() {changeColor2(1);});
+preg[2].addEventListener("mouseout", function() {changeColor2(2);});
+preg[3].addEventListener("mouseout", function() {changeColor2(3);});
