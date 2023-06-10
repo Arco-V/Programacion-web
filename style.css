@@ -11,11 +11,7 @@ body{background-color: #333;}
     border-left: 1px solid #bbb;
     border-radius: 10px;
   }
-  
- .nav {
-    float: left;
-  }
-
+.nav {float: left;}
 .nav a {
     display: flex;
     justify-content: space-around;
@@ -24,44 +20,27 @@ body{background-color: #333;}
     font-family: "Gill Sans MT";
     padding: 14px 16px;
     text-decoration: none;
-
   }
-
-
-  /* La página activa se muestra en rojo en el menú */
+/* La página activa se muestra en rojo en el menú */
   #active {
     background-color: hsl(7, 100%, 55%);
     color:#fefefe;
     font-weight: 200;
-  }  
-
-
+  }
 .nav a:hover{background-color:hsl(7, 100%, 55%);color:#fefefe;}
-
-
 #menu {
     position: fixed;
     top: 0;
     width: 97vw;
   }
-
-  .nav {
-    border-right: 1px solid #bbb;
-  }
-
-  #logo {padding-left: 20vw;
-    float:left;
-    /* width:50%;  */
-    text-align: center;
-    padding-top: 2.67px; 
-    padding-bottom: 0;
-  }
-  
-.nav:last-child {
-    /* border-right: none; */
-    padding-right: 10px;
-    border-left: 1px solid #bbb;
-  }
+.nav {border-right: 1px solid #bbb;}
+#logo {padding-left: 20vw;
+  float:left;
+  text-align: center;
+  padding-top: 2.67px; 
+  padding-bottom: 0;
+}
+.nav:last-child {border-left: 1px solid #bbb;}
 
 /* CONFIGURACIÓN DEL BODY */
 
@@ -84,17 +63,12 @@ body{background-color: #333;}
   display: flex;
   flex-wrap: wrap;}
 
-
-.t {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:#333;
-}
+.t {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#333;}
 .t1 {font-family: "Gill Sans MT"; 
-    color:#736B76;
-}
-  .p1 {font-family: "Sitka Text";
-        text-align: justify;
-}
+    color:#736B76;}
+.p1 {font-family: "Sitka Text";
+    text-align: justify;}
 
 /* Cuadros que hablan sobre la misión y medios para lograrlo */
 
@@ -164,7 +138,6 @@ text-align: justify;
   justify-content: space-evenly;
   margin:25px;
   align-items: stretch;
-    
  }
 
 /* PÁGINA DE CONTENIDO */
@@ -184,10 +157,14 @@ text-align: justify;
 
 #div1:last-child {justify-content: center;}
 
+
+
 /* PÁGINA DE PREGUNTAS */
 
 .pregunta{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 background-color: #dedede;
+background-color: #ededed;
+border: solid #999595 1px;
 color: #635f65;
 border-top-left-radius: 5px;
 border-top-right-radius: 5px;
@@ -196,23 +173,25 @@ font-weight: 500;
 font-style: italic;
 padding: 8px;
 margin-top: 20px;
+
 }
 
 .respuesta{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #edebeb;
+  background-color: #ededed;
+  background-color: #fcfcfc;
   font-size: medium;
   font-weight: 300;
   padding: 8px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  /* display: none; */
+  border: solid #999595 1px;
 }
 
 .form-label{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 padding-right:2vw}
 
-.btn btn-primary btn-lg{--bs-btn-bg: var(--bd-orange-bg);}
+/* .btn btn-primary btn-lg{--bs-btn-bg: var(--bd-orange-bg);} */
  /* ADAPTACIÓN A CELULARES */
 
  @media screen and (max-width: 900px) {
@@ -231,6 +210,7 @@ body {
 .nav a{font-size: small; 
   padding-inline: 10px;
   }
+.nav:last-child{border-left: 0px;}
 
 footer{margin: 2px;}
 .foot{font-size:medium;}
