@@ -40,6 +40,14 @@ body{background-color: #333;}
   padding-top: 2.67px; 
   padding-bottom: 0;
 }
+
+#carrito {
+  float:right;
+  padding-left:10px;
+  padding-right:12px;
+  padding-top:7px
+}
+
 .nav:last-child {border-left: 1px solid #bbb;}
 
 /* CONFIGURACIÓN DEL BODY */
@@ -137,8 +145,16 @@ text-align: justify;
   display: flex;
   justify-content: space-evenly;
   margin:25px;
-  align-items: stretch;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom:35px
  }
+
+ .ebook{width: 350px;}
+ .botonCompra{height: 30px;
+margin-top: 15px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 /* PÁGINA DE CONTENIDO */
 
@@ -147,7 +163,7 @@ text-align: justify;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto ;
   gap: 10px;
-  background-color: #f8f4e9;
+  background-color: rgb(248, 244, 233);
   padding-top: 15px;
   /* justify-content: space-around; */
 }
@@ -160,6 +176,9 @@ text-align: justify;
 
 
 /* PÁGINA DE PREGUNTAS */
+
+/* .col{margin-bottom: 10px;} */
+.form-control{margin-bottom: 10px;}
 
 .pregunta{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 background-color: #dedede;
@@ -190,6 +209,60 @@ margin-top: 20px;
 
 .form-label{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 padding-right:2vw}
+
+/* CARRITO */
+
+/* .divTabla{
+background-color: #fefefe;} */
+.listadoCarrito{
+background-color: #fefefe;
+width: 85vw;
+border-spacing: 0px;
+border: 1px solid #635f65
+}
+
+.fila1Carrito{height: 30px;
+  border: 2px solid #736B76;
+  width: 98vw;
+  background-color: #dedede;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.itemsCarrito{height: 50px;
+  border: 2px solid #736B76;
+  width: 98vw;
+  background-color: #fefefe;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #736B76;
+  text-align: center;
+  display: none;
+}
+
+/* #eb2{display: table-row;} */
+#noitem{display:table-row}
+
+.colCar0{width: 10px;
+  border: 1px solid #bbb;
+  padding-left:2vw;
+  }
+.colCar1{width: 60%;
+border: 1px solid #bbb;
+}
+
+.colCar2{
+  border: 1px solid #bbb;
+  text-align: center;
+}
+  
+.colCar3{
+  border: 1px solid #bbb;
+  text-align: center;}
+
+.colCar4{
+  border: 1px solid #bbb;
+  text-align: center;}
 
 /* .btn btn-primary btn-lg{--bs-btn-bg: var(--bd-orange-bg);} */
  /* ADAPTACIÓN A CELULARES */
@@ -235,5 +308,6 @@ footer{margin: 2px;}
 
 .pregunta{font-size: medium;}
 .respuesta{font-size: 14px;}
+.filaCarrito{font-size: small;}
 }
 
