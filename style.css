@@ -276,7 +276,7 @@ flex-direction: row-reverse;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width:20%;
   font-size: larger;
-  background-color: #ff3700;
+  background-color: rgb(255, 55, 0);
   color: #fefefe;
   font-weight:600;
 }
