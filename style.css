@@ -218,7 +218,8 @@ background-color: #fefefe;} */
 background-color: #fefefe;
 width: 85vw;
 border-spacing: 0px;
-border: 1px solid #635f65
+border: 1px solid #635f65;
+
 }
 
 .fila1Carrito{height: 30px;
@@ -237,17 +238,17 @@ border: 1px solid #635f65
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #736B76;
   text-align: center;
-  display: none;
+  /* display: none; */
 }
 
 /* #eb2{display: table-row;} */
-#noitem{display:table-row}
+#noitem{display:none}
 
 .colCar0{width: 10px;
   border: 1px solid #bbb;
-  padding-left:2vw;
+
   }
-.colCar1{width: 60%;
+.colCar1{width: 50%;
 border: 1px solid #bbb;
 }
 
@@ -263,6 +264,22 @@ border: 1px solid #bbb;
 .colCar4{
   border: 1px solid #bbb;
   text-align: center;}
+
+#totalCar{height: 30px;
+display: flex;
+flex-direction: row-reverse;
+
+}
+
+.botonCar{height:50px;
+  margin-top: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width:20%;
+  font-size: larger;
+  background-color: #ff3700;
+  color: #fefefe;
+  font-weight:600;
+}
 
 /* .btn btn-primary btn-lg{--bs-btn-bg: var(--bd-orange-bg);} */
  /* ADAPTACIÓN A CELULARES */
@@ -309,5 +326,10 @@ footer{margin: 2px;}
 .pregunta{font-size: medium;}
 .respuesta{font-size: 14px;}
 .filaCarrito{font-size: small;}
+#totalCar{margin-bottom: 30px;}
+.fila1Carrito{font-size: small;}
+.itemsCarrito{font-size: small;}
+.botonCar{font-size: small;}
+
 }
 

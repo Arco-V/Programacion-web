@@ -33,34 +33,46 @@
                     <td class="colCar1">Nombre del libro</td>
                     <td class="colCar2">Cantidad</td>
                     <td class="colCar3">Precio</td>
-                    <td class="colCar4">Eliminar</td>
+                    <td class="colCar4">+/-</td>
                 </tr>
-                <tr class="itemsCarrito" id="eb1">
+                <tr class="itemsCarrito" >
                     <td class="colCar0"><img src="images\book_principal.png" alt="Eliminar" style="height:80px"></td>
                     <td class="colCar1">Ebook 1: Criando a tus hijos desde el amor</td>
-                    <td class="colCar2">1</td>
+                    <td class="colCar2" id="eb1"></td>
                     <td class="colCar3">Gratis</td>
-                    <td class="colCar4"><img src="images\tacho.png" alt="Eliminar" style="height:20px"></td>
+                    <td class="colCar4"><button id="botonClear" type="button" onclick="sumarItem(1)"><img src="images\sumar.png" alt="Eliminar" style="height:20px"></button>   <button id="botonClear" type="button" onclick="borrarItem(1)"><img src="images\tacho.png" alt="Eliminar" style="height:20px"></button></td>
                 </tr>
-                <tr class="itemsCarrito" id="eb2">
+                <tr class="itemsCarrito" >
                     <td class="colCar0"><img src="images\dominar_emociones_(1).png" alt="Eliminar" style="height:80px"></td>
                     <td class="colCar1">Ebook 2: Guía práctica para aprender a dominar tus emociones y ser un ejemplo para ellos</td>
-                    <td class="colCar2">1</td>
+                    <td class="colCar2" id="eb2"></td>
                     <td class="colCar3">Gratis</td>
-                    <td class="colCar4"><img src="images\tacho.png" alt="Eliminar" style="height:20px"></td>
+                    <td class="colCar4"><button id="botonClear" type="button" onclick="sumarItem(2)"><img src="images\sumar.png" alt="Eliminar" style="height:20px"></button>   <button id="botonClear" type="button" onclick="borrarItem(2)"><img src="images\tacho.png" alt="Eliminar" style="height:20px"></button></td>
                 </tr>
-                <tr class="itemsCarrito" id="eb3">
+                <tr class="itemsCarrito" >
                     <td class="colCar0"><img src="images\tus_hijos_preguntan.png" alt="Eliminar" style="height:80px"></td>
                     <td class="colCar1">Ebook 3: ¿Tus hijos preguntan todo? Guía práctica para aprender a responder con eficacia y tranquilidad</td>
-                    <td class="colCar2">1</td>
+                    <td class="colCar2" id="eb3"></td>
                     <td class="colCar3">Gratis</td>
-                    <td class="colCar4"><img src="images\tacho.png" alt="Eliminar" style="height:20px"></td>
+                    <td class="colCar4"><button id="botonClear" type="button" onclick="sumarItem(3)"><img src="images\sumar.png" alt="Eliminar" style="height:20px"></button>   <button id="botonClear" type="button" onclick="borrarItem(3)"><img src="images\tacho.png" alt="Eliminar" style="height:20px"></button></td>
                 </tr>
-                <tr class="itemsCarrito" id="noitem">
+                <tr class="itemsCarrito" >
+                    <td class="colCar0">TOTAL</td>
+                    <td class="colCar1"></td>
+                    <td class="colCar2" id="total"></td>
+                    <td class="colCar3">$0</td>
+                    <td class="colCar4">
+                        <!-- <button id="botonClear" type="button" onclick="borrarCants()"><img src="images\tacho.png" alt="Eliminar" style="height:20px"></button> -->
+                    </td>
+                </tr>
+                <!-- <tr class="itemsCarrito" id="noitem">
                     <td></td>
                     <td style="font-style: italic;">Su carrito se encuentra vacío por el momento</td>
-                </tr>
+                </tr> -->
             </table>
+            <div id="totalCar">
+                <button class="botonCar" type="button"> Adquirir </button>
+            </div>
         </div>
     </div>
 
@@ -93,5 +105,5 @@
     </footer>
 
 </body>
-<!-- <script src="script2.js"> </script> -->
+<script src="carrito.js"> </script>
 </html>

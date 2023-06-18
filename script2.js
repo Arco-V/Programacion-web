@@ -25,10 +25,9 @@ compra2.addEventListener("click", function() {addCarrito(2)})
 compra3.addEventListener("click", function() {addCarrito(3)})
 
 function addCarrito (compra){
-    nombre = "Compra ebook " + compra;
+    nombre = "Cantidad libro " + compra;
     if (localStorage.getItem(nombre)==1){alert("Ya lo ha agregado al carrito")}
-    else{nombre = "Compra ebook " + compra;
-        localStorage.setItem(nombre, "1")}
+    else{localStorage.setItem(nombre, "1")}
 }
 
 
