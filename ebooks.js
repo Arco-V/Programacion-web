@@ -1,5 +1,11 @@
-
 // Página de prod-serv.html
+
+function existe (){for (let i = 1; i <=3; i++){
+  nombre = "Cantidad libro " + i;
+  if (localStorage.getItem(nombre)!=1){localStorage.setItem(nombre, "0")}}
+}
+
+existe()
 
 const ebook = document.getElementsByClassName("ebook")
 const prod = document.getElementsByClassName("producto")
@@ -35,35 +41,3 @@ function addCarrito (compra){
     if (localStorage.getItem(nombre)==1){alert("Ya lo ha agregado al carrito")}
     else{localStorage.setItem(nombre, "1");}
 }
-
-
-function existe (){for (let i = 1; i <=3; i++){
-  nombre = "Cantidad libro " + i;
-  if (localStorage.getItem(nombre)!=1){localStorage.setItem(nombre, "0")}}
-}
-
-existe()
-
-
-
-// let cantidad = 0
-// ebook[0].addEventListener("click")
-
-
-// let item = 0
-// item = document.getElementById("item").value
-
-// localStorage.setItem("cantidadCompra",cantidad)
-// localStorage.getItem("item")
-// localStorage.removeItem("item")
-
-
-// localStorage.clear()
-
-// function guardar (){}
-
-// function cargarDatos ()
-
-// function setVariable (varName){
-//     let varName = prompt("Cuánto quiere comprar")
-// }

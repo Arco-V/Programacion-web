@@ -21,7 +21,7 @@ body{background-color: #333;}
     padding: 14px 16px;
     text-decoration: none;
   }
-/* La página activa se muestra en rojo en el menú */
+
   #active {
     background-color: hsl(7, 100%, 55%);
     color:#fefefe;
@@ -52,7 +52,6 @@ body{background-color: #333;}
 
 /* CONFIGURACIÓN DEL BODY */
 
-/* bdiv es para las secciones div más amplias  */
 .bdiv {
     width: 88vw;
     padding: 40px;
@@ -78,7 +77,6 @@ body{background-color: #333;}
 .p1 {font-family: "Sitka Text";
     text-align: justify;}
 
-/* Cuadros que hablan sobre la misión y medios para lograrlo */
 
 .flex {display: flex;
   justify-content: space-evenly;
@@ -165,7 +163,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   gap: 10px;
   background-color: rgb(248, 244, 233);
   padding-top: 15px;
-  /* justify-content: space-around; */
+
 }
 
 .post{width: 27vw;
@@ -177,8 +175,9 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 /* PÁGINA DE PREGUNTAS */
 
-/* .col{margin-bottom: 10px;} */
-.form-control{margin-bottom: 10px;}
+
+.form-control{margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
 .pregunta{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 background-color: #dedede;
@@ -212,14 +211,12 @@ padding-right:2vw}
 
 /* CARRITO */
 
-/* .divTabla{
-background-color: #fefefe;} */
 .listadoCarrito{
 background-color: #fefefe;
 width: 85vw;
 border-spacing: 0px;
 border: 1px solid #635f65;
-
+margin-top: 30px;
 }
 
 .fila1Carrito{height: 30px;
@@ -238,10 +235,9 @@ border: 1px solid #635f65;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #736B76;
   text-align: center;
-  /* display: none; */
 }
 
-/* #eb2{display: table-row;} */
+
 #noitem{display:none}
 
 .colCar0{width: 10px;
@@ -255,11 +251,13 @@ border: 1px solid #bbb;
 .colCar2{
   border: 1px solid #bbb;
   text-align: center;
+  padding:3px;
 }
   
 .colCar3{
   border: 1px solid #bbb;
-  text-align: center;}
+  text-align: center;
+  padding:3px;}
 
 .colCar4{
   border: 1px solid #bbb;
@@ -279,9 +277,10 @@ flex-direction: row-reverse;
   background-color: rgb(255, 55, 0);
   color: #fefefe;
   font-weight:600;
+  border-radius: 10px;
 }
 
-/* .btn btn-primary btn-lg{--bs-btn-bg: var(--bd-orange-bg);} */
+
  /* ADAPTACIÓN A CELULARES */
 
  @media screen and (max-width: 900px) {
@@ -317,7 +316,8 @@ footer{margin: 2px;}
   border: solid#736B76 1px;
 }
 
-.form-control{width: 85%;}
+.form-control{width: 85%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
 .d-grid{justify-content: center;margin-right: 4vw;}
 .t{font-size: x-large;}
@@ -330,6 +330,8 @@ footer{margin: 2px;}
 .fila1Carrito{font-size: small;}
 .itemsCarrito{font-size: small;}
 .botonCar{font-size: small;}
+#botonClear{margin:2px;
+padding:0}
 
 }
 

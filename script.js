@@ -1,4 +1,3 @@
-
 // Página de preguntas.html --> preguntas frecuentes
 
 let preg = document.getElementsByClassName("pregunta")

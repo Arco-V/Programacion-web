@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crianza con armonía</title>
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         <li class="nav"><a href="preguntas.html">Contacto</a></li>
         <li class="nav2" id="logo"><a href="index.html"><img src = "images\logo.png" alt="nombre" style="width:120px;height: 40px;"></a></li>
         <li class="nav2" id="carrito"><a id="active" href="carrito.html"><img id="carro" src = "images\carrito2.png" alt="nombre" style="height: 30px;"></a></li>
-        <!-- <li class="nav" style="float:right"><a href="about.html">About</a></li> -->
+
     </ul>
 </header>
 
@@ -26,12 +27,26 @@
 <div class="bdiv" id="div1"> 
     <div>
         <h1 class="t">Carrito de compras</h1>
+
+        <form target="_blank" action="https://formsubmit.co/valentinoarcodaci@gmail.com" method="POST">
+        
+            <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" name="name" class="form-control" placeholder="Nombre completo" required>
+                  </div>
+                  <div class="col">
+                    <input type="email" name="email" class="form-control" placeholder="Dirección de Email" required>
+                  </div>
+                </div>
+              </div>
+
         <div class="divTabla">
             <table class="listadoCarrito">
                 <tr class="fila1Carrito">
                     <td class="colCar0"></td>
                     <td class="colCar1">Nombre del libro</td>
-                    <td class="colCar2">Cantidad</td>
+                    <td class="colCar2"id="cant">Cant.</td>
                     <td class="colCar3">Precio</td>
                     <td class="colCar4">+/-</td>
                 </tr>
@@ -61,30 +76,24 @@
                     <td class="colCar1"></td>
                     <td class="colCar2" id="total"></td>
                     <td class="colCar3">$0</td>
-                    <td class="colCar4">
-                        <!-- <button id="botonClear" type="button" onclick="borrarCants()"><img src="images\tacho.png" alt="Eliminar" style="height:20px"></button> -->
-                    </td>
+                    <td class="colCar4"></td>
                 </tr>
-                <!-- <tr class="itemsCarrito" id="noitem">
-                    <td></td>
-                    <td style="font-style: italic;">Su carrito se encuentra vacío por el momento</td>
-                </tr> -->
             </table>
+            <input type="hidden" id="ebInput1" name="Cantidad Ebook 1" class="form-control"  required>
+            <input type="hidden" id="ebInput2" name="Cantidad Ebook 2" class="form-control"  required>
+            <input type="hidden" id="ebInput3" name="Cantidad Ebook 3" class="form-control"  required>
             <div id="totalCar">
-                <button class="botonCar" type="button" onclick="adquirirLibros()"> Adquirir </button>
+                <button class="botonCar" type="submit"> Adquirir </button>
             </div>
         </div>
+        </form>
     </div>
     
-
-
-<!-- CIERRE DE DIV PRINCIPAL -->
 </div>
 
 </main>
     
     <br>   <br>
-
     <footer style="border-top:1px solid #736B76; margin-right: 20px;">
 
         <ul type="none" class="foot_ul">
@@ -100,8 +109,6 @@
              
             </table>
         </ul>
-
-
     </footer>
 
 </body>
