@@ -1,4 +1,4 @@
-body{background-color: #333;}
+body{background-color: #ffffff;}
 
 /* CONFIGURACIÓN DEL MENÚ */
 #menu {
@@ -27,7 +27,7 @@ body{background-color: #333;}
     color:#fefefe;
     font-weight: 200;
   }
-.nav a:hover{background-color:hsl(7, 100%, 55%);color:#fefefe;}
+.nav a:hover{background-color:#ff341a;color:#fefefe;}
 #menu {
     position: fixed;
     top: 0;
@@ -74,19 +74,25 @@ body{background-color: #333;}
     color:#333;}
 .t1 {font-family: "Gill Sans MT"; 
     color:#736B76;}
-.p1 {font-family: "Sitka Text";
-    text-align: justify;}
-
+.p1 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    text-align: justify;
+    color:#292929;}
 
 .flex {display: flex;
   justify-content: space-evenly;
   padding-top: 15px;
   flex-wrap: wrap;
 }
+.flex1 {display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+}
 
 .cuadro{
   width: 580px;
-  height: 210px;
+  /* height: 210px; */
   border-radius: 10px;
   border-width: 3px;
   border: 2px solid #bbb;
@@ -96,15 +102,16 @@ body{background-color: #333;}
   margin-top:10px;
   margin-right: 5px;
   align-items: baseline;
-  border: 1px solid #736B76;   
-  background-color: #ff341a;}
+  border: 2px solid #736B76;   
+  background-color: rgb(248, 244, 233);}
 
 .cuadrodet {text-align:justify; 
 padding-left: 25px;
 padding-right:30px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-color:#fefefe;
+color:#736B76;
 }
+
 
 .lista1 {color:#fefefe;
 padding-left: 50px;
@@ -114,12 +121,13 @@ text-align: justify;
 
 .it1{padding-bottom:10px}
 
-.white_t{color:#fefefe;
+.cuadro_t{color:#333;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
     font-weight:600;
     text-align: left;
     padding-left: 25px;
+    height: 26px;
 }
 
 /* FOOTER */
@@ -149,8 +157,9 @@ text-align: justify;
  }
 
  .ebook{width: 350px;}
- .botonCompra{height: 30px;
-margin-top: 15px;
+ .botonCompra{
+  /* height: 30px; */
+margin: 10px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -332,6 +341,6 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 .botonCar{font-size: small;}
 #botonClear{margin:2px;
 padding:0}
-
+.botonCompra{font-size: small;}
 }
 

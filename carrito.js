@@ -72,4 +72,21 @@ function sumarItem(i)
     }        
 
 
+    function adquirirLibros (){
+        let cantEb1 = localStorage.getItem("Cantidad libro 1");
+        if(cantEb1=="1"){downloadPdf("images\\Ebook1.pdf")}
+        }
+    
+    
+    function downloadPdf (path) {
+        const downloadInstance = document.createElement("a");
+        downloadInstance.href = path;
+        downloadInstance.target = "_blank";
+        
+        document.body.appendChild(downloadInstance);
+        downloadInstance.click();
+        document.body.removeChild(downloadInstance)
+    }
 
+// const boton_carrito = document.getElementById("boton_carrito")
+// boton_carrito.addEventListener("click", function() {adquirirLibros ()})

@@ -13,9 +13,9 @@
 <header> 
     <ul id="menu">
         <li class="nav"><a href="index.html">Home</a></li>
-        <li class="nav"><a href="contenido.html">Contenido</a></li>
+        <!-- <li class="nav"><a href="contenido.html">Contenido</a></li> -->
         <li class="nav"><a href="prod-serv.html">Ebooks</a></li>
-        <li class="nav"><a href="preguntas.html">Contacto</a></li>
+        <!-- <li class="nav"><a href="preguntas.html">Contacto</a></li> -->
         <li class="nav2" id="logo"><a href="index.html"><img src = "images\logo.png" alt="nombre" style="width:120px;height: 40px;"></a></li>
         <li class="nav2" id="carrito"><a id="active" href="carrito.html"><img id="carro" src = "images\carrito2.png" alt="nombre" style="height: 30px;"></a></li>
 
@@ -51,13 +51,13 @@
                     <td class="colCar4">+/-</td>
                 </tr>
                 <tr class="itemsCarrito" >
-                    <td class="colCar0"><img src="images\book_principal.png" alt="Eliminar" style="height:80px"></td>
-                    <td class="colCar1">Ebook 1: Criando a tus hijos desde el amor</td>
+                    <td class="colCar0"><img src="images\guia_gratuita.jpeg" alt="Eliminar" style="height:120px;padding: 5px;"></td>
+                    <td class="colCar1">Las 10 razones por las cuales preocuparte por la crianza de tus hijos</td>
                     <td class="colCar2" id="eb1"></td>
                     <td class="colCar3">Gratis</td>
                     <td class="colCar4"><button id="botonClear" type="button" onclick="sumarItem(1)"><img src="images\sumar.png" alt="Eliminar" style="height:20px"></button>   <button id="botonClear" type="button" onclick="borrarItem(1)"><img src="images\tacho.png" alt="Eliminar" style="height:20px"></button></td>
                 </tr>
-                <tr class="itemsCarrito" >
+                <!-- <tr class="itemsCarrito" >
                     <td class="colCar0"><img src="images\dominar_emociones_(1).png" alt="Eliminar" style="height:80px"></td>
                     <td class="colCar1">Ebook 2: Guía práctica para aprender a dominar tus emociones y ser un ejemplo para ellos</td>
                     <td class="colCar2" id="eb2"></td>
@@ -69,7 +69,7 @@
                     <td class="colCar1">Ebook 3: ¿Tus hijos preguntan todo? Guía práctica para aprender a responder con eficacia y tranquilidad</td>
                     <td class="colCar2" id="eb3"></td>
                     <td class="colCar3">Gratis</td>
-                    <td class="colCar4"><button id="botonClear" type="button" onclick="sumarItem(3)"><img src="images\sumar.png" alt="Eliminar" style="height:20px"></button>   <button id="botonClear" type="button" onclick="borrarItem(3)"><img src="images\tacho.png" alt="Eliminar" style="height:20px"></button></td>
+                    <td class="colCar4"><button id="botonClear" type="button" onclick="sumarItem(3)"><img src="images\sumar.png" alt="Eliminar" style="height:20px"></button>   <button id="botonClear" type="button" onclick="borrarItem(3)"><img src="images\tacho.png" alt="Eliminar" style="height:20px"></button></td> -->
                 </tr>
                 <tr class="itemsCarrito" >
                     <td class="colCar0">TOTAL</td>
@@ -83,7 +83,7 @@
             <input type="hidden" id="ebInput2" name="Cantidad Ebook 2" class="form-control"  required>
             <input type="hidden" id="ebInput3" name="Cantidad Ebook 3" class="form-control"  required>
             <div id="totalCar">
-                <button class="botonCar" type="submit"> Adquirir </button>
+                <button class="botonCar" type="submit" id="boton_carrito" onclick="adquirirLibros()"> Adquirir </button>
             </div>
         </div>
         </form>
