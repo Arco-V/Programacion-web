@@ -163,8 +163,10 @@ text-align: justify;
   /* height: 30px; */
 margin: 10px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #ff341a;border-radius: 4px;border-width: 2px;border: 2px solid #bbb;color: #ffffff;;padding: 3px;font-size: medium;
 }
 
+.img_promo{width: 150px;}
 /* PÁGINA DE CONTENIDO */
 
  .grid_container {
@@ -343,7 +345,8 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 .botonCar{font-size: small;}
 #botonClear{margin:2px;
 padding:0}
-.botonCompra{font-size: small;}
+.botonCompra{font-size: 12px;}
 .img_guia{width: 100px;}
+.img_promo{width: 15vw;}
 }
 
