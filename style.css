@@ -130,6 +130,8 @@ text-align: justify;
     height: 26px;
 }
 
+.img_guia{width: 180px; border: 4px solid #ffffff;}
+
 /* FOOTER */
 .foot{   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 32px;
@@ -342,5 +344,6 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 #botonClear{margin:2px;
 padding:0}
 .botonCompra{font-size: small;}
+.img_guia{width: 100px;}
 }
 
